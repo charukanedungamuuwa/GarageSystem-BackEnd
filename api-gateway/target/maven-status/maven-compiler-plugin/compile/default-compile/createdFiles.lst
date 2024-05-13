@@ -1,0 +1,4 @@
+com/Garage/apigateway/ApiGatewayApplication.class
+com/Garage/apigateway/config/AuthGatewayFilterFactory.class
+com/Garage/apigateway/config/GatewayConfig.class
+com/Garage/apigateway/config/AuthGatewayFilterFactory$Config.class

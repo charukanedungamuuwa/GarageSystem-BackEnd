@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.Garage.GarageServices.GarageServicesApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.886 s -- in com.Garage.GarageServices.GarageServicesApplicationTests

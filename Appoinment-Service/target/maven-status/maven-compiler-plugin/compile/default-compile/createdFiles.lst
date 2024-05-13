@@ -1,0 +1,7 @@
+com/Garage/AppoinmentService/controller/AppointmentController$AddAppointmentRequest.class
+com/Garage/AppoinmentService/service/AppointmentService.class
+com/Garage/AppoinmentService/repository/AppointmentRepository.class
+com/Garage/AppoinmentService/kafka/AppointmentProducerService.class
+com/Garage/AppoinmentService/AppoinmentServiceApplication.class
+com/Garage/AppoinmentService/controller/AppointmentController.class
+com/Garage/AppoinmentService/model/Appointment.class

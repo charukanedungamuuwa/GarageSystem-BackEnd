@@ -1,0 +1,8 @@
+com/Garage/vehicleownerservice/repository/VehicleOwnerRepository.class
+com/Garage/vehicleownerservice/service/VehicleOwnerService.class
+com/Garage/vehicleownerservice/model/VehicleOwner.class
+com/Garage/vehicleownerservice/Exeptions/UserNotFoundException.class
+com/Garage/vehicleownerservice/Exeptions/UserAlreadyExistsException.class
+com/Garage/vehicleownerservice/VehicleOwnerServiceApplication.class
+com/Garage/vehicleownerservice/Exeptions/OwnerNotFoundException.class
+com/Garage/vehicleownerservice/controller/VehicleOwnerController.class

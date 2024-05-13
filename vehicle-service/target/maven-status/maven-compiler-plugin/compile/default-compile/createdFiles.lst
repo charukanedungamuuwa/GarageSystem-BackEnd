@@ -1,0 +1,6 @@
+com/garage/vehicleservice/controller/VehicleController.class
+com/garage/vehicleservice/repository/VehicleRepository.class
+com/garage/vehicleservice/VehicleServiceApplication.class
+com/garage/vehicleservice/model/Vehicle.class
+com/garage/vehicleservice/service/VehicleService.class
+com/garage/vehicleservice/controller/VehicleController$AddVehicleRequest.class

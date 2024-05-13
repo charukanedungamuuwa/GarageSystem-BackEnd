@@ -1,0 +1,95 @@
+version: '3.8'
+
+services:
+  discovery-server:
+    build:
+      context: ./discovery_server
+    ports:
+      - "8761:8761"
+    volumes:
+      - ./discovery_server/src/main/resources:/application.properties
+    networks:
+      - my-network
+
+
+  api-gateway:
+    build:
+      context: ./api-gateway
+    ports:
+      - "8080:8080"
+    networks:
+      - my-network
+    volumes:
+      - ./api-gateway/src/main/resources:/application.properties
+    depends_on:
+      - discovery-server
+
+
+
+  auth-service:
+    build:
+      context: ./AuthService
+    ports:
+      - "8083:8080"
+    networks:
+      - my-network
+    volumes:
+      - ./AuthService/src/main/resources:/application.properties
+    depends_on:
+      - discovery-server
+
+
+
+
+  appointment-service:
+    build:
+      context: ./Appoinment-Service
+    ports:
+      - "8086:8080"
+    networks:
+      - my-network
+    volumes:
+      - ./Appoinment-Service/src/main/resources:/application.properties
+    depends_on:
+      - discovery-server
+
+
+  garage-service:
+    build:
+      context: ./Garage-Services
+    ports:
+      - "8087:8080"
+    networks:
+      - my-network
+    volumes:
+      - ./Garage-Services/src/main/resources:/application.properties
+    depends_on:
+      - discovery-server
+
+  vehicle-owner-service:
+    build:
+      context: ./vehicle-owner-service
+    ports:
+      - "8085:8080"
+    networks:
+      - my-network
+    volumes:
+      - ./vehicle-owner-service/src/main/resources:/application.properties
+    depends_on:
+      - discovery-server
+
+  vehicle-service:
+    build:
+      context: ./vehicle-service
+    ports:
+      - "8088:8080"
+    networks:
+      - my-network
+    volumes:
+      - ./vehicle-service/src/main/resources:/application.properties
+    depends_on:
+      - discovery-server
+
+networks:
+  my-network:
+    driver: bridge
